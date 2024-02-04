@@ -271,7 +271,8 @@ class crystals:
             y = rows['y'].values
             i = rows['group'].values[0]
             axs.fill(x, y, alpha=opacity, fc=colors[i], linewidth=0.5, edgecolor='black')
-        plt.show()
+        # plt.show()
+        return fig
 
     def to_df(self):
         return self.o_crystal_bar_chart.df
